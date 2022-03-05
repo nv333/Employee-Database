@@ -165,8 +165,8 @@ class DBOperations:
             employee_id = input("Enter employee ID: ")
  
             column = input("Enter column to update: ")
-            newValue = input("Enter value to update: ")
-            update = (newValue, employee_id)
+            new_value = input("Enter value to update: ")
+            update = (new_value, employee_id)
 
             if column == "Title":
                 self.cur.execute(self.sql_update_title, update)
